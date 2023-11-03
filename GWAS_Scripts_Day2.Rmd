@@ -1,0 +1,106 @@
+---
+title: "GWAS_Scripts_Day2"
+author: "Evelia Coss"
+date: "2023-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Try running some QC (missingness here):
+
+Manual [PLINK](https://www.cog-genomics.org/plink/1.9/basic_stats)
+
+In Terminal, cluster UNAM.
+
+```
+plink --bfile simul_sampled_children_mexico --missing --out testplink
+```
+
+In R:
+
+```{r}
+indir <- "Plink_example/practical_2/student_data/"
+imiss <- read.table(file = paste0(indir,"testplink.imiss"),header=TRUE)
+hist(imiss[,6])
+dim(imiss[imiss[,6]>0.03,])
+```
+
+```{r}
+lmiss <- read.table(file = paste0(indir,"testplink.lmiss"),header=TRUE)
+hist(lmiss[,5])
+dim(lmiss[lmiss[,5]>0.03,])
+```
+
+## Heterozygosity
+
+```
+plink --bfile simul_sampled_children_mexico --het --out testplink
+```
+
+--het computes observed and expected autosomal homozygous genotype counts for each sample, and reports method-of-moments F coefficient estimates (i.e. (<observed hom. count> - <expected count>) / (<total observations> - <expected count>)) to plink.het. (The 'gz' modifier has the usual effect.)
+
+```{r}
+het <- read.table(file="testplink.het",header=TRUE)
+
+ph <- read.table(file="simul_sampled_children_pheno_ca_mel.txt",header=TRUE,sep="\t")
+names(ph)[1]<-"IID"
+
+hetph <- merge(het,ph)
+```
+
+## Run PCA:
+
+```
+plink --bfile simul_sampled_children_mexico --pca --out testplink
+```
+
+```{r}
+pca <- read.table(file="testplink.eigenvec",header=FALSE)
+
+names(pca)[c(1,3,4)] <- c("IID","PC1","PC2")
+pcaph <- merge(pca[,c(1,3,4)],ph)
+
+plot(pcaph[,2],pcaph[,3])
+points(pcaph[pcaph[,4]=="Asian - Pakistani",2],pcaph[pcaph[,4]=="Asian - Pakistani",3],col="red")
+points(pcaph[pcaph[,4]=="White - British",2],pcaph[pcaph[,4]=="White - British",3],col="green")
+
+```
+
+
+## Run association with melanoma on all samples:
+
+```
+plink --bfile simul_sampled_children_mexico --logistic --allow-no-sex --out testplinkall
+```
+
+```{r}
+reslog<-read.table(file="testplinkall.assoc.logistic",header=TRUE)
+
+dim(reslog[!is.na(reslog[,9])&reslog[,9]<0.000001,])
+```
+
+[1] 1941    9
+
+
+#Run association with melanoma on just white British samples:
+
+```
+plink --bfile simul_sampled_children_mexico --keep weuro_children.txt --logistic --allow-no-sex --out testplinkall2
+```
+```{r}
+reslog2<-read.table(file="testplinkall2.assoc.logistic",header=TRUE)
+
+reslog2[!is.na(reslog2[,9])&reslog2[,9]<0.000001,]
+```
+
+CHR           SNP       BP A1 TEST NMISS      OR   STAT         P
+43014   9 GSA-rs7866787 21760639  A  ADD   422  0.1157 -9.782 1.351e-22
+43016   9 GSA-rs4478653 21853221  G  ADD   421  2.9220  6.479 9.225e-11
+69901  16      rs258322 89755903  A  ADD   422 35.9200  8.121 4.634e-16
+
+
+
+

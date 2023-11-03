@@ -1,0 +1,127 @@
+---
+title: "GWAS_Scripts_Day3"
+author: "Evelia Coss"
+date: "2023-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+Genotype data on Covid:
+covid1_22.bed 
+covid1_22.bim  
+covid1_22.fam  
+instructions_for_workshop.txt - Instrucciones del curso 
+melanoma1_22.fam - Fam file for the same people but with melanoma status  
+strokegwasresults_p5.txt - GWAS results on stroke (all variants with p<0.05)
+
+
+```{r}
+indir <- "Plink_example/practical_3/student_data/"
+gwas <- read.table(paste0(indir,file="strokegwasresults_p5.txt"),header=T)
+head(gwas)
+```
+## Convert ORs to betas (log odds ratios):
+
+Convert the effect sizes (currently odds ratios, OR) into betas/log odds ratios (by logging these)
+Then write out the columns with the SNP ID (rs number), allele (A1) and beta/log odds ratio to a file
+Only include those SNPs with a p-value beyond some threshold (e.g. p<10^-6).
+This way the PRS includes a high proportion of genuinely associated SNPs.
+
+```{r}
+gwas[,10] <- log(gwas[,7]) # 1. Convert the effect sizes (currently odds ratios) into betas
+colnames(gwas)[10] <- "Betas"
+head(gwas)
+# 2. Then write out the columns with the SNP ID (rs number), allele (A1) and beta/log odds ratio to a file, p<10^-6
+write.table(gwas[gwas[,9]<10^(-6), c(2, 4, 10)], file= paste0(indir,"PRS_p6.txt"),  row.names=F, col.names=F,  quote=F, sep="\t")
+```
+
+##
+
+We can use this file to create a polygenic risk score for risk of stroke for every person in the dataset 
+based on a specific level of significance
+
+Subir al servidor
+
+rsync ./PRS_p6.txt ecoss@powerwall.lavis.unam.mx:/home/ecoss/practical_3/student_data
+
+```
+plink --bfile covid1_22 --score PRS_p6.txt --out score6
+```
+
+```
+ head score6.profile
+      FID       IID  PHENO    CNT   CNT2    SCORE
+  2000680   2000680      1     88      1 0.00245361
+  2004644   2004644      1     88      0        0
+  2005300   2005300      1     88      1 0.00152876
+  2006022   2006022      1     86      1 0.00153976
+  2008058   2008058      1     88      1 -0.00138185
+  2008128   2008128      2     88      1 -0.00138185
+  2011262   2011262      1     88      1 -0.00138185
+  2012218   2012218      2     88      0        0
+  2012908   2012908      2     88      0        0
+
+```
+
+
+###
+
+```{r}
+score <- read.table(file= paste0(indir,"score6.profile"),header=T)
+score
+```
+
+You can then regress Covid case/control status on the stroke PRS (remembering that case=2 and control=1 but R needs case=1 and control=0):
+
+```{r}
+resall <- glm((score[,3]-1)~score[,6],family=binomial)
+resall
+```
+There are two useful measures to get from this - the p-value and the pseudo R^2
+The p-value tells us whether the stroke PRS is associated with risk of Covid
+The pseudo R^2 is a measure of the variation in Covid risk explained by the PRS for stroke
+
+p-values from:
+```{r}
+summary(resall)
+```
+pseudo R^2 from:
+
+```{r}
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+```
+## Repeat this for the different PRS (at different p-value cutoffs) you have created
+
+See what happens when you include sex as a covariate. Read in the fam file to get this:
+
+```{r}
+famm <- read.table(file= paste0(indir, "covid1_22.fam"),header=F)
+names(famm)[c(1,5)] <- c("FID","SEX")
+```
+
+and use the 'merge' command to combine with the score file
+
+```{r}
+scoresex <- merge(score,famm[,c(1,5)])
+```
+
+## Then run the regression again with sex included:
+
+```{r}
+resall <- glm((scoresex[,3]-1)~scoresex[,7]+scoresex[,6],family=binomial)
+summary(resall)
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+``` 
+- melanoma1_22.fam is for the same people but has case/control status for melanoma in column 6 (rather than stroke).
+
+Read it into R and merge with your PRS file (score) to see whether the stroke PRS is associated with melanoma risk
+
+
+
+
+
