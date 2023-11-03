@@ -1,0 +1,970 @@
+SIMUL_ID	ethnicity	biraderi	CA	MEL_CC
+ID1	NA	NA	0	1
+ID10	Asian - Pakistani	Rajput	1	1
+ID100	Asian - Pakistani	NA	0	1
+ID101	Asian - Pakistani	Mughal	0	1
+ID102	Asian - Pakistani	Rajput	1	1
+ID103	Asian - Pakistani	Pathan	1	1
+ID104	Black - African	NA	0	1
+ID105	Asian - Indian	NA	0	1
+ID106	White - British	NA	0	2
+ID107	Asian - Pakistani	Choudhry	1	1
+ID108	White - British	NA	0	1
+ID109	NA	NA	0	1
+ID11	White - British	NA	0	1
+ID110	Black - African	NA	1	1
+ID111	Black - African	NA	0	1
+ID112	Other	NA	0	1
+ID113	White - British	NA	0	1
+ID114	White - Other	NA	0	2
+ID115	Asian - Pakistani	NA	0	1
+ID116	White - British	NA	0	1
+ID117	NA	NA	0	1
+ID118	Asian - Pakistani	Bains	0	1
+ID119	White - British	NA	0	2
+ID12	Asian - Pakistani	Pathan	0	1
+ID120	Asian - Pakistani	Rajput	0	1
+ID121	White - British	NA	0	2
+ID122	White - British	NA	1	1
+ID123	Other	NA	0	1
+ID124	Asian - Bangladeshi	NA	0	1
+ID125	White - British	NA	0	2
+ID126	White - British	NA	0	1
+ID127	Other	NA	0	1
+ID128	Asian - Pakistani	Rajput	0	1
+ID129	Black - African	NA	0	1
+ID13	White - British	NA	0	1
+ID130	White - Other	NA	0	2
+ID131	White - Other	NA	0	1
+ID132	Asian - Indian	NA	0	1
+ID133	NA	NA	0	1
+ID134	Asian - Indian	NA	0	1
+ID135	White - Other	NA	0	1
+ID136	White - British	NA	0	2
+ID137	Asian - Pakistani	Pathan	0	1
+ID138	Asian - Pakistani	NA	0	1
+ID139	Asian - Pakistani	Jatt	0	1
+ID14	NA	NA	0	1
+ID140	White - British	NA	0	1
+ID141	Asian - Pakistani	Kashmiri	0	1
+ID142	White - British	NA	0	1
+ID143	NA	NA	0	1
+ID144	Asian - Pakistani	Pathan	0	1
+ID145	Asian - Pakistani	Pathan	0	1
+ID146	White - British	NA	0	2
+ID147	NA	NA	0	1
+ID148	NA	NA	0	1
+ID149	White - Other	NA	0	1
+ID15	Asian - Pakistani	Pathan	1	1
+ID150	White - Other	NA	0	1
+ID151	Other	NA	0	1
+ID152	White - British	NA	0	2
+ID153	White - British	NA	0	2
+ID154	White - British	NA	1	2
+ID155	Asian - Pakistani	Jatt	0	1
+ID156	Asian - Indian	NA	0	1
+ID157	Asian - Pakistani	Jatt	0	1
+ID158	White - British	NA	0	2
+ID159	White - British	NA	0	1
+ID16	White - British	NA	0	1
+ID160	Asian - Indian	NA	0	1
+ID161	Asian - Indian	NA	0	1
+ID162	NA	NA	0	1
+ID163	NA	NA	0	1
+ID164	White - British	NA	0	1
+ID165	White - British	NA	0	2
+ID166	White - British	NA	0	1
+ID167	White - Other	NA	0	2
+ID168	NA	NA	0	1
+ID169	NA	NA	0	1
+ID17	Asian - Pakistani	Choudhry	0	1
+ID170	White - British	NA	0	2
+ID171	White - British	NA	0	2
+ID172	NA	NA	0	1
+ID173	White - Other	NA	0	1
+ID174	White - British	NA	0	2
+ID175	Asian - Pakistani	Kashmiri	1	1
+ID176	Asian - Pakistani	Pathan	0	1
+ID177	Black - African	NA	0	1
+ID178	Asian - Indian	NA	0	1
+ID179	Other	NA	0	1
+ID18	Black - African	NA	0	1
+ID180	White - British	NA	0	2
+ID181	Asian - Pakistani	Choudhry	0	1
+ID182	Other	NA	0	1
+ID183	Asian - Pakistani	Pathan	0	1
+ID184	Asian - Pakistani	Kashmiri	0	1
+ID185	Asian - Pakistani	Jatt	0	1
+ID186	White - British	NA	0	1
+ID187	Asian - Pakistani	Rajput	0	1
+ID188	White - British	NA	0	1
+ID189	NA	NA	0	1
+ID19	Other	NA	0	1
+ID190	White - British	NA	0	1
+ID191	White - British	NA	1	2
+ID192	White - British	NA	0	1
+ID193	Asian - Pakistani	Pathan	0	1
+ID194	White - British	NA	0	2
+ID195	White - British	NA	0	1
+ID196	Asian - Pakistani	Jatt	0	1
+ID197	NA	NA	0	1
+ID198	White - British	NA	0	2
+ID199	NA	NA	0	1
+ID2	Black - African	NA	0	1
+ID20	White - British	NA	0	1
+ID200	White - British	NA	0	1
+ID201	White - British	NA	0	2
+ID202	White - British	NA	0	1
+ID203	Asian - Pakistani	Pathan	0	1
+ID204	Asian - Pakistani	Rajput	0	1
+ID205	Asian - Pakistani	Jatt	0	1
+ID206	White - British	NA	0	1
+ID207	NA	NA	0	1
+ID208	White - British	NA	0	1
+ID209	Asian - Pakistani	Pathan	0	1
+ID21	Asian - Indian	NA	0	1
+ID210	Asian - Pakistani	Rajput	0	1
+ID211	White - British	NA	0	2
+ID212	NA	NA	0	1
+ID213	White - British	NA	0	1
+ID214	NA	NA	0	1
+ID215	NA	NA	0	1
+ID216	White - British	NA	0	2
+ID217	White - British	NA	0	2
+ID218	Asian - Pakistani	Choudhry	0	1
+ID219	White - British	NA	0	2
+ID22	White - British	NA	0	1
+ID220	White - Other	NA	0	1
+ID221	White - British	NA	0	1
+ID222	White - British	NA	0	1
+ID223	Asian - Pakistani	Jatt	0	1
+ID224	White - British	NA	0	2
+ID225	Asian - Indian	NA	0	1
+ID226	Asian - Pakistani	Jatt	0	1
+ID227	Asian - Pakistani	Bains	0	1
+ID228	White - British	NA	0	2
+ID229	Asian - Pakistani	Jatt	0	1
+ID23	White - British	NA	0	2
+ID230	White - British	NA	0	1
+ID231	Asian - Pakistani	Mughal	0	1
+ID232	White - British	NA	0	2
+ID233	White - British	NA	0	1
+ID234	White - British	NA	0	1
+ID235	White - Other	NA	0	1
+ID236	White - British	NA	0	1
+ID237	Asian - Pakistani	Kashmiri	0	1
+ID238	NA	NA	0	1
+ID239	Asian - Bangladeshi	NA	0	1
+ID24	White - British	NA	0	1
+ID240	White - Other	NA	0	1
+ID241	Asian - Pakistani	Mughal	0	1
+ID242	NA	NA	0	1
+ID243	White - British	NA	0	1
+ID244	White - British	NA	0	1
+ID245	NA	NA	0	1
+ID246	Asian - Pakistani	Bains	0	1
+ID247	Asian - Pakistani	Rajput	0	1
+ID248	White - British	NA	0	2
+ID249	Asian - Pakistani	Choudhry	0	1
+ID25	Asian - Pakistani	Jatt	0	1
+ID250	NA	NA	0	1
+ID251	Asian - Pakistani	Jatt	0	1
+ID252	Asian - Pakistani	Pathan	0	1
+ID253	Asian - Pakistani	Bains	0	1
+ID254	Asian - Pakistani	Mughal	1	1
+ID255	White - British	NA	0	1
+ID256	Asian - Pakistani	Rajput	0	1
+ID257	NA	NA	1	1
+ID258	White - British	NA	0	2
+ID259	White - British	NA	0	2
+ID26	White - British	NA	0	1
+ID260	Black - African	NA	0	1
+ID261	White - British	NA	0	1
+ID262	NA	NA	0	1
+ID263	Asian - Bangladeshi	NA	0	1
+ID264	Asian - Pakistani	Mughal	0	1
+ID265	White - British	NA	0	2
+ID266	White - British	NA	0	1
+ID267	NA	NA	0	1
+ID268	White - British	NA	0	2
+ID269	Asian - Indian	NA	0	1
+ID27	Asian - Bangladeshi	NA	0	1
+ID270	White - British	NA	0	2
+ID271	White - British	NA	0	1
+ID272	White - British	NA	0	1
+ID273	White - British	NA	0	2
+ID274	White - British	NA	0	1
+ID275	Asian - Indian	NA	0	1
+ID276	White - British	NA	0	1
+ID277	White - British	NA	0	1
+ID278	Asian - Pakistani	Bains	0	1
+ID279	NA	NA	0	1
+ID28	White - British	NA	0	2
+ID280	White - British	NA	0	2
+ID281	White - British	NA	0	1
+ID282	NA	NA	0	1
+ID283	White - British	NA	0	1
+ID284	White - British	NA	0	1
+ID285	Asian - Pakistani	Pathan	0	1
+ID286	White - British	NA	0	1
+ID287	Other	NA	0	1
+ID288	White - British	NA	0	1
+ID289	White - British	NA	0	1
+ID29	White - British	NA	0	2
+ID290	White - British	NA	0	2
+ID291	White - British	NA	0	1
+ID292	White - British	NA	0	1
+ID293	NA	NA	0	1
+ID294	White - British	NA	0	2
+ID295	Asian - Pakistani	Rajput	0	1
+ID296	White - British	NA	0	1
+ID297	Asian - Pakistani	Choudhry	0	1
+ID298	NA	NA	0	1
+ID299	Asian - Pakistani	Rajput	0	1
+ID3	White - British	NA	0	1
+ID30	White - British	NA	0	1
+ID300	White - British	NA	0	1
+ID301	Asian - Pakistani	Bains	0	1
+ID302	Asian - Pakistani	Rajput	0	1
+ID303	White - British	NA	1	1
+ID304	White - British	NA	0	2
+ID305	White - British	NA	0	1
+ID306	White - British	NA	0	2
+ID307	White - British	NA	0	2
+ID308	White - British	NA	0	1
+ID309	White - British	NA	0	2
+ID31	White - Other	NA	1	1
+ID310	NA	NA	0	1
+ID311	White - British	NA	0	1
+ID312	NA	NA	0	1
+ID313	Asian - Pakistani	Bains	1	1
+ID314	Asian - Bangladeshi	NA	0	1
+ID315	Asian - Bangladeshi	NA	0	1
+ID316	White - British	NA	0	1
+ID317	Asian - Pakistani	Rajput	0	1
+ID318	White - British	NA	0	1
+ID319	NA	NA	1	1
+ID32	Asian - Indian	NA	0	1
+ID320	Asian - Pakistani	Jatt	0	1
+ID321	White - British	NA	0	1
+ID322	Asian - Pakistani	Pathan	0	1
+ID323	Asian - Pakistani	Choudhry	0	1
+ID324	NA	NA	0	1
+ID325	Asian - Indian	NA	1	1
+ID326	White - British	NA	0	1
+ID327	White - British	NA	0	2
+ID328	White - British	NA	0	2
+ID329	White - British	NA	0	2
+ID33	Asian - Indian	NA	0	1
+ID330	White - British	NA	0	2
+ID331	White - British	NA	0	1
+ID332	Asian - Pakistani	Rajput	0	1
+ID333	NA	NA	0	1
+ID334	White - British	NA	0	2
+ID335	White - British	NA	0	2
+ID336	White - Other	NA	0	1
+ID337	Asian - Pakistani	Choudhry	0	1
+ID338	White - British	NA	0	1
+ID339	NA	NA	0	1
+ID34	White - British	NA	0	1
+ID340	Asian - Pakistani	Pathan	0	1
+ID341	White - British	NA	0	1
+ID342	White - British	NA	0	1
+ID343	Asian - Pakistani	Kashmiri	0	1
+ID344	White - British	NA	0	1
+ID345	White - British	NA	0	1
+ID346	Asian - Pakistani	Rajput	0	1
+ID347	White - British	NA	0	2
+ID348	White - British	NA	0	2
+ID349	Other	NA	0	1
+ID35	Asian - Pakistani	Bains	0	1
+ID350	Asian - Pakistani	Pathan	0	1
+ID351	White - British	NA	0	2
+ID352	NA	NA	0	1
+ID353	White - British	NA	0	1
+ID354	NA	NA	0	1
+ID355	Asian - Pakistani	Pathan	0	1
+ID356	Asian - Pakistani	Pathan	1	1
+ID357	White - British	NA	0	2
+ID358	White - British	NA	0	2
+ID359	White - British	NA	0	1
+ID36	White - British	NA	0	2
+ID360	Asian - Pakistani	Jatt	0	1
+ID361	Asian - Pakistani	Mughal	1	1
+ID362	White - British	NA	0	2
+ID363	Asian - Pakistani	Kashmiri	0	1
+ID364	Asian - Pakistani	Jatt	0	1
+ID365	Other	NA	0	1
+ID366	White - British	NA	0	2
+ID367	Asian - Pakistani	Pathan	0	1
+ID368	White - British	NA	0	2
+ID369	White - Other	NA	0	1
+ID37	White - British	NA	1	2
+ID370	Asian - Pakistani	Rajput	0	1
+ID371	White - British	NA	0	1
+ID372	White - British	NA	0	2
+ID373	NA	NA	0	1
+ID374	White - Other	NA	0	2
+ID375	Asian - Pakistani	Pathan	0	1
+ID376	White - British	NA	0	1
+ID377	Asian - Pakistani	Rajput	0	1
+ID378	White - British	NA	0	1
+ID379	White - British	NA	0	1
+ID38	White - British	NA	0	2
+ID380	White - British	NA	0	2
+ID381	Asian - Pakistani	Choudhry	0	1
+ID382	Asian - Bangladeshi	NA	0	1
+ID383	Asian - Pakistani	Kashmiri	0	1
+ID384	White - British	NA	0	1
+ID385	White - British	NA	1	1
+ID386	White - British	NA	0	2
+ID387	White - British	NA	0	1
+ID388	NA	NA	0	1
+ID389	Asian - Pakistani	Choudhry	0	1
+ID39	White - British	NA	0	1
+ID390	Asian - Pakistani	Bains	0	1
+ID391	Asian - Pakistani	Kashmiri	0	1
+ID392	Asian - Pakistani	Pathan	0	1
+ID393	NA	NA	0	1
+ID394	White - British	NA	0	1
+ID395	Asian - Pakistani	Choudhry	0	1
+ID396	Other	NA	0	1
+ID397	White - British	NA	0	2
+ID398	Asian - Indian	NA	0	1
+ID399	Asian - Pakistani	Pathan	0	1
+ID4	Asian - Pakistani	Jatt	0	1
+ID40	Asian - Pakistani	Bains	0	1
+ID400	NA	NA	0	1
+ID401	Asian - Pakistani	Rajput	0	1
+ID402	Asian - Pakistani	Choudhry	0	1
+ID403	NA	NA	0	1
+ID404	White - British	NA	0	1
+ID405	White - Other	NA	0	1
+ID406	White - British	NA	0	1
+ID407	Asian - Pakistani	Choudhry	0	1
+ID408	NA	NA	0	1
+ID409	White - British	NA	1	1
+ID41	Asian - Pakistani	Pathan	0	1
+ID410	NA	NA	0	1
+ID411	Asian - Pakistani	Jatt	1	1
+ID412	Asian - Pakistani	Jatt	0	1
+ID413	Asian - Pakistani	Jatt	0	1
+ID414	Asian - Pakistani	Choudhry	0	1
+ID415	White - British	NA	0	2
+ID416	White - British	NA	0	1
+ID417	White - Other	NA	0	2
+ID418	Asian - Pakistani	Rajput	0	1
+ID419	White - British	NA	0	2
+ID42	Asian - Bangladeshi	NA	0	1
+ID420	White - British	NA	0	2
+ID421	Asian - Bangladeshi	NA	0	1
+ID422	Other	NA	0	1
+ID423	White - British	NA	0	1
+ID424	White - Other	NA	0	2
+ID425	NA	NA	0	1
+ID426	White - British	NA	0	1
+ID427	Asian - Bangladeshi	NA	1	1
+ID428	White - British	NA	0	1
+ID429	Asian - Pakistani	Choudhry	0	1
+ID43	NA	NA	0	1
+ID430	NA	NA	0	1
+ID431	White - British	NA	0	2
+ID432	Asian - Pakistani	Jatt	0	1
+ID433	NA	NA	0	1
+ID434	Asian - Pakistani	Choudhry	0	1
+ID435	Asian - Pakistani	Jatt	0	1
+ID436	Asian - Pakistani	Choudhry	0	1
+ID437	Asian - Indian	NA	0	1
+ID438	NA	NA	0	1
+ID439	Asian - Pakistani	Bains	0	1
+ID44	Asian - Pakistani	Pathan	0	1
+ID440	Asian - Pakistani	Choudhry	0	1
+ID441	NA	NA	0	1
+ID442	Asian - Pakistani	Choudhry	0	1
+ID443	Asian - Pakistani	Kashmiri	0	1
+ID444	White - British	NA	0	2
+ID445	White - British	NA	0	2
+ID446	Asian - Pakistani	Rajput	0	1
+ID447	White - British	NA	0	2
+ID448	Asian - Bangladeshi	NA	0	1
+ID449	White - British	NA	0	1
+ID45	Asian - Pakistani	Rajput	0	1
+ID450	White - British	NA	0	2
+ID451	White - British	NA	0	1
+ID452	White - British	NA	0	1
+ID453	White - British	NA	1	2
+ID454	Asian - Pakistani	NA	0	1
+ID455	White - British	NA	0	1
+ID456	NA	NA	0	1
+ID457	White - British	NA	0	1
+ID458	White - British	NA	1	1
+ID459	Asian - Pakistani	NA	0	1
+ID46	White - British	NA	0	1
+ID460	White - British	NA	0	1
+ID461	NA	NA	0	1
+ID462	NA	NA	0	1
+ID463	Asian - Indian	NA	0	1
+ID464	NA	NA	0	1
+ID465	Asian - Pakistani	Jatt	0	1
+ID466	Asian - Pakistani	Rajput	1	1
+ID467	White - British	NA	0	2
+ID468	Asian - Pakistani	NA	0	1
+ID469	NA	NA	0	1
+ID47	White - British	NA	0	2
+ID470	White - British	NA	0	1
+ID471	Asian - Pakistani	Pathan	0	1
+ID472	Asian - Indian	NA	0	1
+ID473	White - British	NA	0	1
+ID474	Asian - Pakistani	Bains	0	1
+ID475	White - British	NA	0	1
+ID476	White - British	NA	0	1
+ID477	White - British	NA	0	2
+ID478	White - British	NA	0	2
+ID479	White - British	NA	0	1
+ID48	White - British	NA	0	1
+ID480	White - British	NA	1	1
+ID481	NA	NA	0	1
+ID482	Asian - Pakistani	Pathan	0	1
+ID483	Asian - Pakistani	Bains	0	1
+ID484	NA	NA	0	1
+ID485	Asian - Pakistani	Pathan	0	1
+ID486	Asian - Indian	NA	0	1
+ID487	NA	NA	0	1
+ID488	Asian - Bangladeshi	NA	0	1
+ID489	Asian - Pakistani	Choudhry	0	1
+ID49	Asian - Pakistani	Bains	0	1
+ID490	White - British	NA	0	1
+ID491	White - British	NA	0	2
+ID492	White - British	NA	0	2
+ID493	Asian - Pakistani	Jatt	0	1
+ID494	Asian - Pakistani	Bains	0	1
+ID495	Asian - Bangladeshi	NA	0	1
+ID496	Asian - Pakistani	Kashmiri	1	1
+ID497	Asian - Pakistani	Jatt	0	1
+ID498	NA	NA	0	1
+ID499	White - British	NA	0	2
+ID5	White - British	NA	0	1
+ID50	Asian - Indian	NA	0	1
+ID500	White - British	NA	0	1
+ID501	White - British	NA	0	1
+ID502	NA	NA	0	1
+ID503	White - British	NA	0	1
+ID504	White - Other	NA	0	1
+ID505	NA	NA	0	1
+ID506	Asian - Pakistani	Rajput	0	1
+ID507	Asian - Pakistani	Kashmiri	0	1
+ID508	NA	NA	0	1
+ID509	White - British	NA	0	1
+ID51	Asian - Pakistani	Bains	0	1
+ID510	Asian - Pakistani	Pathan	0	1
+ID511	Asian - Pakistani	Rajput	0	1
+ID512	White - British	NA	0	2
+ID513	White - British	NA	0	2
+ID514	Black - African	NA	0	1
+ID515	Asian - Pakistani	Jatt	0	1
+ID516	NA	NA	0	1
+ID517	Asian - Indian	NA	0	1
+ID518	White - British	NA	0	2
+ID519	NA	NA	0	1
+ID52	White - British	NA	0	1
+ID520	NA	NA	0	1
+ID521	NA	NA	0	1
+ID522	White - British	NA	0	1
+ID523	Asian - Pakistani	NA	0	1
+ID524	White - British	NA	0	1
+ID525	White - British	NA	0	1
+ID526	Asian - Pakistani	Pathan	0	1
+ID527	White - British	NA	0	1
+ID528	NA	NA	0	1
+ID529	NA	NA	0	1
+ID53	Asian - Pakistani	Rajput	0	1
+ID530	NA	NA	0	1
+ID531	White - Other	NA	0	1
+ID532	White - British	NA	1	1
+ID533	Asian - Pakistani	NA	0	1
+ID534	Asian - Pakistani	Bains	0	1
+ID535	White - Other	NA	0	1
+ID536	Asian - Pakistani	NA	0	1
+ID537	Asian - Pakistani	Pathan	0	1
+ID538	White - British	NA	0	2
+ID539	White - British	NA	0	2
+ID54	NA	NA	0	1
+ID540	White - British	NA	0	1
+ID541	NA	NA	0	1
+ID542	Asian - Bangladeshi	NA	0	1
+ID543	NA	NA	0	1
+ID544	Asian - Pakistani	Rajput	0	1
+ID545	White - British	NA	0	2
+ID546	Asian - Bangladeshi	NA	0	1
+ID547	White - British	NA	0	2
+ID548	Asian - Pakistani	Choudhry	0	1
+ID549	White - British	NA	0	2
+ID55	Asian - Indian	NA	0	1
+ID550	NA	NA	0	1
+ID551	White - British	NA	0	1
+ID552	White - British	NA	0	1
+ID553	White - British	NA	0	2
+ID554	White - British	NA	1	1
+ID555	White - British	NA	0	1
+ID556	White - British	NA	0	2
+ID557	White - British	NA	0	1
+ID558	Asian - Pakistani	Kashmiri	0	1
+ID559	Black - African	NA	1	1
+ID56	White - British	NA	0	1
+ID560	Asian - Pakistani	Pathan	0	1
+ID561	White - British	NA	0	1
+ID562	White - British	NA	1	1
+ID563	White - British	NA	0	1
+ID564	NA	NA	0	1
+ID565	White - British	NA	0	1
+ID566	White - British	NA	0	1
+ID567	Asian - Pakistani	Rajput	0	1
+ID568	Asian - Bangladeshi	NA	0	1
+ID569	White - British	NA	0	1
+ID57	Asian - Pakistani	Jatt	0	1
+ID570	White - British	NA	0	1
+ID571	White - British	NA	0	1
+ID572	White - British	NA	0	1
+ID573	White - British	NA	0	2
+ID574	White - British	NA	0	1
+ID575	White - British	NA	0	1
+ID576	White - British	NA	0	2
+ID577	Asian - Pakistani	Jatt	0	1
+ID578	White - British	NA	0	1
+ID579	Asian - Pakistani	Jatt	0	1
+ID58	White - British	NA	0	2
+ID580	White - British	NA	0	1
+ID581	White - British	NA	1	2
+ID582	Asian - Pakistani	Pathan	1	1
+ID583	Asian - Pakistani	Jatt	0	1
+ID584	Asian - Pakistani	Jatt	0	1
+ID585	Asian - Pakistani	Jatt	0	1
+ID586	White - British	NA	0	1
+ID587	White - British	NA	0	2
+ID588	White - British	NA	0	2
+ID589	NA	NA	0	1
+ID59	Asian - Pakistani	Pathan	0	1
+ID590	Asian - Pakistani	Jatt	0	1
+ID591	White - British	NA	0	1
+ID592	White - British	NA	0	1
+ID593	NA	NA	0	1
+ID594	NA	NA	0	1
+ID595	Asian - Pakistani	Jatt	0	1
+ID596	White - British	NA	1	1
+ID597	White - British	NA	0	1
+ID598	White - British	NA	0	1
+ID599	Asian - Pakistani	Bains	0	1
+ID6	White - British	NA	0	1
+ID60	White - British	NA	0	1
+ID600	Asian - Pakistani	Rajput	0	1
+ID601	Asian - Pakistani	Pathan	0	1
+ID602	Asian - Pakistani	Choudhry	0	1
+ID603	White - British	NA	0	1
+ID604	White - British	NA	0	1
+ID605	White - British	NA	0	2
+ID606	Asian - Pakistani	Jatt	0	1
+ID607	White - Other	NA	0	1
+ID608	White - British	NA	0	1
+ID609	Asian - Pakistani	Pathan	0	1
+ID61	Asian - Pakistani	Jatt	0	1
+ID610	Other	NA	0	1
+ID611	White - British	NA	0	2
+ID612	Asian - Pakistani	Mughal	0	1
+ID613	White - British	NA	0	2
+ID614	White - British	NA	0	2
+ID615	Asian - Pakistani	Rajput	1	1
+ID616	White - British	NA	0	1
+ID617	Asian - Indian	NA	0	1
+ID618	Asian - Pakistani	Choudhry	0	1
+ID619	Asian - Pakistani	Rajput	0	1
+ID62	White - British	NA	0	1
+ID620	Asian - Pakistani	Jatt	1	1
+ID621	White - British	NA	0	1
+ID622	White - British	NA	1	1
+ID623	Asian - Pakistani	Jatt	0	1
+ID624	Asian - Pakistani	Jatt	0	1
+ID625	Asian - Bangladeshi	NA	0	1
+ID626	White - British	NA	0	1
+ID627	White - British	NA	0	2
+ID628	NA	NA	0	1
+ID629	NA	NA	0	1
+ID63	White - British	NA	0	2
+ID630	Asian - Pakistani	Bains	0	1
+ID631	White - British	NA	0	1
+ID632	White - Other	NA	0	1
+ID633	NA	NA	0	1
+ID634	White - British	NA	0	2
+ID635	Asian - Pakistani	Jatt	0	1
+ID636	Asian - Bangladeshi	NA	0	1
+ID637	White - British	NA	0	2
+ID638	Asian - Pakistani	Kashmiri	0	1
+ID639	NA	NA	0	1
+ID64	Asian - Pakistani	Kashmiri	0	1
+ID640	White - British	NA	0	2
+ID641	White - British	NA	0	1
+ID642	White - British	NA	0	1
+ID643	White - British	NA	0	2
+ID644	White - British	NA	0	2
+ID645	White - British	NA	0	1
+ID646	White - Other	NA	0	2
+ID647	White - British	NA	0	2
+ID648	Asian - Pakistani	Rajput	0	1
+ID649	White - British	NA	0	2
+ID65	NA	NA	0	1
+ID650	Asian - Pakistani	Bains	0	1
+ID651	White - British	NA	0	2
+ID652	White - British	NA	0	2
+ID653	NA	NA	0	1
+ID654	White - British	NA	0	1
+ID655	White - British	NA	0	2
+ID656	White - British	NA	0	2
+ID657	Black - African	NA	0	1
+ID658	White - British	NA	0	2
+ID659	NA	NA	0	1
+ID66	Asian - Pakistani	Rajput	0	1
+ID660	White - British	NA	0	2
+ID661	White - British	NA	0	1
+ID662	White - Other	NA	0	2
+ID663	White - Other	NA	0	2
+ID664	NA	NA	0	1
+ID665	NA	NA	0	1
+ID666	White - British	NA	0	2
+ID667	White - British	NA	0	1
+ID668	Asian - Pakistani	Rajput	1	1
+ID669	NA	NA	0	1
+ID67	White - British	NA	0	1
+ID670	White - British	NA	0	1
+ID671	White - British	NA	0	2
+ID672	NA	NA	0	1
+ID673	Asian - Pakistani	NA	0	1
+ID674	Asian - Pakistani	Rajput	0	1
+ID675	White - British	NA	0	2
+ID676	Asian - Pakistani	Pathan	0	1
+ID677	White - British	NA	0	1
+ID678	NA	NA	0	1
+ID679	Black - African	NA	0	1
+ID68	NA	NA	0	1
+ID680	White - British	NA	0	2
+ID681	White - British	NA	0	1
+ID682	NA	NA	0	1
+ID683	White - British	NA	0	1
+ID684	White - British	NA	0	2
+ID685	Asian - Pakistani	Bains	1	1
+ID686	White - British	NA	0	1
+ID687	White - British	NA	0	2
+ID688	NA	NA	0	1
+ID689	White - British	NA	0	2
+ID69	Asian - Pakistani	Pathan	0	1
+ID690	NA	NA	0	1
+ID691	Asian - Pakistani	Kashmiri	0	1
+ID692	White - British	NA	0	1
+ID693	White - British	NA	0	1
+ID694	Asian - Pakistani	NA	0	1
+ID695	Asian - Pakistani	Choudhry	0	1
+ID696	White - British	NA	0	1
+ID697	White - British	NA	0	1
+ID698	Asian - Pakistani	Jatt	0	1
+ID699	Asian - Pakistani	Rajput	0	1
+ID7	Asian - Pakistani	Mughal	1	1
+ID70	Asian - Pakistani	Bains	0	1
+ID700	White - British	NA	0	1
+ID701	Asian - Pakistani	Pathan	0	1
+ID702	White - British	NA	0	1
+ID703	White - British	NA	0	2
+ID704	Asian - Pakistani	Choudhry	0	1
+ID705	White - British	NA	1	2
+ID706	Asian - Pakistani	Pathan	0	1
+ID707	White - British	NA	0	1
+ID708	Asian - Pakistani	Pathan	0	1
+ID709	White - British	NA	0	2
+ID71	NA	NA	0	1
+ID710	Asian - Pakistani	Rajput	0	1
+ID711	Asian - Pakistani	Bains	0	1
+ID712	White - British	NA	0	1
+ID713	Asian - Pakistani	Mughal	0	1
+ID714	Asian - Pakistani	Mughal	0	1
+ID715	Asian - Pakistani	Bains	0	1
+ID716	Asian - Pakistani	Choudhry	0	1
+ID717	White - British	NA	0	1
+ID718	White - British	NA	1	1
+ID719	White - British	NA	0	2
+ID72	Asian - Pakistani	Pathan	0	1
+ID720	Asian - Pakistani	Bains	0	1
+ID721	Asian - Pakistani	Jatt	0	1
+ID722	Asian - Pakistani	Jatt	0	1
+ID723	Asian - Pakistani	Mughal	0	1
+ID724	Asian - Pakistani	Kashmiri	0	1
+ID725	White - British	NA	0	1
+ID726	White - British	NA	0	2
+ID727	White - British	NA	0	1
+ID728	White - British	NA	0	1
+ID729	White - British	NA	0	1
+ID73	White - British	NA	0	2
+ID730	Asian - Pakistani	Kashmiri	0	1
+ID731	White - British	NA	0	1
+ID732	Asian - Pakistani	Choudhry	0	1
+ID733	Asian - Pakistani	NA	0	1
+ID734	Asian - Pakistani	NA	0	1
+ID735	Asian - Pakistani	NA	0	1
+ID736	White - British	NA	0	1
+ID737	White - British	NA	0	1
+ID738	Asian - Pakistani	NA	0	1
+ID739	Asian - Pakistani	Pathan	0	1
+ID74	White - British	NA	0	1
+ID740	White - British	NA	0	2
+ID741	White - British	NA	0	2
+ID742	Asian - Pakistani	NA	0	1
+ID743	Asian - Bangladeshi	NA	0	1
+ID744	White - Other	NA	0	1
+ID745	White - British	NA	1	2
+ID746	White - British	NA	0	2
+ID747	Asian - Pakistani	Pathan	1	1
+ID748	White - British	NA	1	2
+ID749	White - British	NA	0	2
+ID75	NA	NA	0	1
+ID750	Asian - Bangladeshi	NA	0	1
+ID751	White - British	NA	0	2
+ID752	White - British	NA	0	1
+ID753	White - British	NA	0	1
+ID754	White - British	NA	0	1
+ID755	Asian - Pakistani	NA	0	1
+ID756	Asian - Pakistani	NA	0	1
+ID757	Asian - Pakistani	NA	0	1
+ID758	White - British	NA	0	2
+ID759	White - British	NA	0	1
+ID76	Black - African	NA	0	1
+ID760	White - British	NA	0	1
+ID761	Asian - Pakistani	NA	1	1
+ID762	White - British	NA	0	2
+ID763	White - British	NA	0	2
+ID764	White - British	NA	0	1
+ID765	White - British	NA	0	2
+ID766	Asian - Pakistani	NA	1	1
+ID767	White - British	NA	0	1
+ID768	White - British	NA	0	2
+ID769	White - British	NA	0	1
+ID77	Other	NA	0	1
+ID770	Asian - Bangladeshi	NA	0	1
+ID771	White - British	NA	0	2
+ID772	Asian - Indian	NA	0	1
+ID773	White - British	NA	0	2
+ID774	White - British	NA	0	2
+ID775	White - British	NA	0	2
+ID776	Asian - Pakistani	NA	0	1
+ID777	White - British	NA	0	1
+ID778	White - British	NA	0	2
+ID779	White - British	NA	0	1
+ID78	Asian - Indian	NA	0	1
+ID780	Asian - Pakistani	Choudhry	0	1
+ID781	Asian - Pakistani	NA	0	1
+ID782	Asian - Pakistani	NA	0	1
+ID783	Asian - Pakistani	NA	0	1
+ID784	Asian - Pakistani	NA	0	1
+ID785	White - British	NA	0	1
+ID786	White - British	NA	0	2
+ID787	Asian - Pakistani	Pathan	0	1
+ID788	White - British	NA	0	1
+ID789	White - Other	NA	0	1
+ID79	White - British	NA	0	1
+ID790	Asian - Pakistani	NA	0	1
+ID791	White - British	NA	0	2
+ID792	Asian - Pakistani	NA	0	1
+ID793	White - British	NA	0	2
+ID794	Asian - Pakistani	NA	0	1
+ID795	White - British	NA	0	2
+ID796	Asian - Pakistani	Choudhry	0	1
+ID797	White - British	NA	0	1
+ID798	White - British	NA	0	2
+ID799	White - British	NA	0	1
+ID8	Asian - Pakistani	Jatt	1	1
+ID80	NA	NA	0	1
+ID800	Asian - Pakistani	Mughal	0	1
+ID801	White - British	NA	0	1
+ID802	Asian - Pakistani	Jatt	0	1
+ID803	White - British	NA	0	1
+ID804	Asian - Pakistani	Choudhry	0	1
+ID805	Asian - Pakistani	Choudhry	0	1
+ID806	White - British	NA	0	1
+ID807	White - British	NA	0	1
+ID808	White - British	NA	0	1
+ID809	White - British	NA	0	2
+ID81	Asian - Pakistani	Bains	0	1
+ID810	Asian - Pakistani	Kashmiri	0	1
+ID811	White - British	NA	0	2
+ID812	White - British	NA	0	2
+ID813	Asian - Pakistani	NA	0	1
+ID814	Asian - Pakistani	NA	1	1
+ID815	White - British	NA	0	1
+ID816	Asian - Indian	NA	0	1
+ID817	NA	NA	0	1
+ID818	Asian - Pakistani	NA	0	1
+ID819	White - British	NA	0	2
+ID82	White - British	NA	0	1
+ID820	White - British	NA	0	1
+ID821	White - British	NA	0	2
+ID822	Asian - Pakistani	NA	0	1
+ID823	Asian - Pakistani	Rajput	1	1
+ID824	White - British	NA	0	2
+ID825	Asian - Pakistani	Choudhry	0	1
+ID826	Black - African	NA	0	1
+ID827	White - British	NA	0	1
+ID828	Asian - Pakistani	NA	0	1
+ID829	White - British	NA	0	1
+ID83	White - British	NA	0	1
+ID830	White - British	NA	0	2
+ID831	Asian - Pakistani	NA	0	1
+ID832	Asian - Indian	NA	0	1
+ID833	White - British	NA	0	1
+ID834	Asian - Pakistani	Pathan	0	1
+ID835	Asian - Indian	NA	1	1
+ID836	Asian - Indian	NA	0	1
+ID837	White - British	NA	0	2
+ID838	NA	NA	0	1
+ID839	Asian - Pakistani	Jatt	0	1
+ID84	White - British	NA	0	1
+ID840	NA	NA	0	1
+ID841	White - British	NA	0	2
+ID842	White - British	NA	0	2
+ID843	Asian - Pakistani	NA	0	1
+ID844	Asian - Pakistani	NA	0	1
+ID845	White - British	NA	0	1
+ID846	White - British	NA	0	1
+ID847	Asian - Bangladeshi	NA	0	1
+ID848	Asian - Pakistani	NA	0	1
+ID849	Asian - Pakistani	NA	0	1
+ID85	Asian - Pakistani	Jatt	1	1
+ID850	Asian - Indian	NA	0	1
+ID851	Asian - Pakistani	NA	0	1
+ID852	White - British	NA	0	1
+ID853	Asian - Pakistani	NA	1	1
+ID854	White - British	NA	0	2
+ID855	White - British	NA	0	2
+ID856	Asian - Indian	NA	0	1
+ID857	White - British	NA	0	1
+ID858	Asian - Pakistani	NA	1	1
+ID859	Asian - Pakistani	NA	0	1
+ID86	Black - African	NA	0	1
+ID860	White - British	NA	0	2
+ID861	White - British	NA	0	1
+ID862	Asian - Pakistani	NA	0	1
+ID863	White - British	NA	0	2
+ID864	White - British	NA	0	1
+ID865	White - British	NA	0	2
+ID866	Asian - Pakistani	NA	0	1
+ID867	Asian - Pakistani	NA	0	1
+ID868	NA	NA	0	1
+ID869	White - British	NA	0	1
+ID87	White - British	NA	0	1
+ID870	White - British	NA	0	2
+ID871	White - British	NA	0	2
+ID872	White - British	NA	0	2
+ID873	Black - African	NA	0	1
+ID874	Asian - Indian	NA	1	1
+ID875	Asian - Pakistani	NA	0	1
+ID876	NA	NA	0	1
+ID877	Asian - Bangladeshi	NA	0	1
+ID878	Asian - Indian	NA	0	1
+ID879	White - British	NA	0	1
+ID88	White - British	NA	0	2
+ID880	NA	NA	0	1
+ID881	White - British	NA	0	2
+ID882	White - British	NA	0	1
+ID883	NA	NA	0	1
+ID884	Asian - Pakistani	NA	1	1
+ID885	White - British	NA	0	1
+ID886	NA	NA	0	1
+ID887	NA	NA	0	1
+ID888	White - British	NA	0	1
+ID889	NA	NA	0	1
+ID89	Asian - Pakistani	Jatt	0	1
+ID890	White - British	NA	0	1
+ID891	Asian - Pakistani	Jatt	0	1
+ID892	White - British	NA	0	1
+ID893	NA	NA	0	1
+ID894	White - British	NA	0	1
+ID895	Asian - Pakistani	NA	0	1
+ID896	Asian - Pakistani	NA	0	1
+ID897	Asian - Pakistani	NA	0	1
+ID898	White - British	NA	0	2
+ID899	Asian - Bangladeshi	NA	0	1
+ID9	White - Other	NA	0	1
+ID90	Asian - Pakistani	Kashmiri	0	1
+ID900	Asian - Pakistani	Jatt	0	1
+ID901	Asian - Pakistani	NA	0	1
+ID902	Asian - Pakistani	NA	1	1
+ID903	White - British	NA	0	2
+ID904	Asian - Pakistani	Rajput	0	1
+ID905	White - British	NA	0	1
+ID906	Asian - Indian	NA	0	1
+ID907	Asian - Pakistani	NA	0	1
+ID908	Asian - Pakistani	NA	0	1
+ID909	White - British	NA	0	1
+ID91	NA	NA	0	1
+ID910	White - British	NA	0	2
+ID911	Asian - Pakistani	NA	0	1
+ID912	White - British	NA	0	2
+ID913	NA	NA	1	1
+ID914	Asian - Pakistani	Jatt	0	1
+ID915	White - British	NA	0	2
+ID916	White - British	NA	1	1
+ID917	Asian - Pakistani	Bains	0	1
+ID918	White - British	NA	0	1
+ID919	White - British	NA	0	1
+ID92	Asian - Indian	NA	0	1
+ID920	White - British	NA	0	2
+ID921	Asian - Pakistani	Rajput	0	1
+ID922	Asian - Pakistani	NA	0	1
+ID923	Asian - Pakistani	NA	0	1
+ID924	White - British	NA	0	2
+ID925	Asian - Pakistani	Choudhry	0	1
+ID926	Asian - Pakistani	NA	0	1
+ID927	Asian - Pakistani	Jatt	0	1
+ID928	Asian - Pakistani	Choudhry	0	1
+ID929	White - British	NA	0	1
+ID93	White - Other	NA	0	1
+ID930	White - British	NA	0	1
+ID931	White - British	NA	0	2
+ID932	Asian - Pakistani	NA	0	1
+ID933	NA	NA	0	1
+ID934	White - British	NA	0	1
+ID935	Asian - Pakistani	Jatt	1	1
+ID936	Asian - Pakistani	NA	0	1
+ID937	White - British	NA	0	2
+ID938	White - British	NA	0	2
+ID939	NA	NA	0	1
+ID94	White - British	NA	0	2
+ID940	White - British	NA	0	2
+ID941	Asian - Pakistani	Pathan	0	1
+ID942	White - British	NA	0	1
+ID943	Asian - Pakistani	Jatt	0	1
+ID944	White - British	NA	0	2
+ID945	White - British	NA	0	2
+ID946	White - British	NA	0	1
+ID947	Asian - Pakistani	Rajput	0	1
+ID948	Asian - Pakistani	Pathan	0	1
+ID949	White - British	NA	0	2
+ID95	White - British	NA	0	1
+ID950	White - British	NA	0	1
+ID951	NA	NA	0	1
+ID952	White - Other	NA	0	1
+ID953	Black - African	NA	1	1
+ID954	White - British	NA	0	2
+ID955	White - British	NA	0	1
+ID956	White - British	NA	0	1
+ID957	Asian - Pakistani	NA	0	1
+ID958	Asian - Pakistani	Jatt	0	1
+ID959	White - British	NA	0	1
+ID96	White - British	NA	0	1
+ID960	Asian - Pakistani	NA	1	1
+ID961	NA	NA	0	1
+ID962	Asian - Pakistani	NA	0	1
+ID963	Asian - Pakistani	Jatt	0	1
+ID964	White - British	NA	0	1
+ID965	Asian - Pakistani	NA	0	1
+ID966	Asian - Pakistani	NA	0	1
+ID967	White - British	NA	0	2
+ID968	White - British	NA	0	2
+ID969	White - British	NA	0	1
+ID97	Asian - Bangladeshi	NA	0	1
+ID98	White - British	NA	0	2
+ID99	Asian - Indian	NA	0	1

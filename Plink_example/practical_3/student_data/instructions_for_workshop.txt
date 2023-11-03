@@ -1,0 +1,85 @@
+
+Genotype data on Covid:
+covid1_22.bed
+covid1_22.bim
+covid1_22.fam
+
+#GWAS results on stroke (all variants with p<0.05):
+
+strokegwasresults_p5.txt
+
+#Fam file for the same people but with melanoma status:
+
+melanoma1_22.fam
+
+#Read the stroke GWAS data into R so we can convert it into the right format to calculate a PRS
+
+gwas<-read.table(file="strokegwasresults.txt",header=T)
+
+#Convert the effect sizes (currently odds ratios) into betas/log odds ratios (by logging these)
+
+#Then write out the columns with the SNP ID (rs number), allele (A1) and beta/log odds ratio to a file
+#Only include those SNPs with a p-value beyond some threshold (e.g. p<10^-6).
+#This way the PRS includes a high proportion of genuinely associated SNPs.
+
+#We can use this file to create a polygenic risk score for risk of stroke for every person in the dataset 
+#based on a specific level of significance
+
+#So the first few lines will look like:
+
+rs291875965  T  1.2911592
+1:2009548_GC_G  G -0.4704837
+rs1100738283  A  4.0267792
+rs157026489  A  0.2303178
+rs1113507113  T  1.6331544
+
+#Repeat this creating files with different p-value cutoffs for inclusion
+
+#Then use these to calculate polygenic risk scores for each person. E.g.:
+
+plink --bfile covid1_22 --score prs.txt --out score
+
+#Where prs.txt is the file you just created from the GWAS results.
+#The output file for this will have the PRS for each person in the file score.profile
+
+#Repeat this for all the files you created at different p-value cutoffs
+
+#Then read the results into R:
+
+score<-read.table(file="score.profile",header=T)
+
+#You can then regress Covid case/control status on the stroke PRS (remembering that case=2 and control=1 but R needs case=1 and control=0):
+
+resall<-glm((score[,3]-1)~score[,6],family=binomial)
+
+#There are two useful measures to get from this - the p-value and the pseudo R^2
+#The p-value tells us whether the stroke PRS is associated with risk of Covid
+#The pseudo R^2 is a measure of the variation in Covid risk explained by the PRS for stroke
+
+#p-values from:
+summary(resall)
+#pseudo R^2 from:
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+
+
+#Repeat this for the different PRS (at different p-value cutoffs) you have created
+
+#See what happens when you include sex as a covariate. Read in the fam file to get this:
+
+famm<-read.table(file="covid1_22.fam",header=F)
+names(famm)[c(1,5)]<-c("FID","SEX")
+
+#and use the 'merge' command to combine with the score file
+
+scoresex<-merge(score,famm[,c(1,5)])
+
+#Then run the regression again with sex included:
+
+resall<-glm((scoresex[,3]-1)~scoresex[,7]+scoresex[,6],family=binomial)
+summary(resall)
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+
+#melanoma1_22.fam is for the same people but has case/control status for melanoma in column 6 (rather than stroke).
+#Read it into R and merge with your PRS file (score) to see whether the stroke PRS is associated with melanoma risk
+
+

@@ -1,0 +1,28 @@
+PLINK v1.90b7.1 64-bit (18 Oct 2023)
+Options in effect:
+  --file mexico
+  --make-bed
+  --out bmexico
+
+Hostname: cursobio
+Working directory: /home/ecoss/practical_1
+Start time: Mon Oct 30 14:44:01 2023
+
+Random number seed: 1698698641
+257044 MB RAM detected; reserving 128522 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (22 variants, 500 people).
+--file: bmexico-temporary.bed + bmexico-temporary.bim + bmexico-temporary.fam
+written.
+22 variants loaded from .bim file.
+500 people (219 males, 281 females) loaded from .fam.
+500 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 500 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.956273.
+22 variants and 500 people pass filters and QC.
+Among remaining phenotypes, 250 are cases and 250 are controls.
+--make-bed to bmexico.bed + bmexico.bim + bmexico.fam ... done.
+
+End time: Mon Oct 30 14:44:01 2023

@@ -1,0 +1,74 @@
+#Instructions for workshop
+
+#Genotype data:
+simul_sampled_children_mexico.bed
+simul_sampled_children_mexico.bim
+simul_sampled_children_mexico.fam
+
+#Phenotype data:
+simul_sampled_children_pheno_ca_mel.txt
+#"IID /FID" is ID, "ethnicity" is as expected, "biraderi" is clan, "MEL_CC" is melanoma case/control status - 1=control, 2=case
+
+#Extra files listing south Asian and European samples:
+sasian_children.txt
+weuro_children.txt
+
+#--freq calculates allele frequency at each marker
+plink --bfile simul_sampled_children_mexico --freq
+
+#To see results type:
+more plink.frq
+
+#Read data into R:
+fr<-read.table("plink.frq",header=TRUE)
+fr[1:3,]
+
+#Plot a histogram of frequencies
+hist(fr[,"MAF"])
+
+#Now try running PCA
+plink --bfile simul_sampled_children_mexico --pca
+
+
+#Read results into R
+child_eigenvec<-read.table(file="plink.eigenvec",header=FALSE)
+plot(child_eigenvec[,3],child_eigenvec[,4])
+
+#To understand what these mean use phenotype data
+#Read in phenotypes
+ph<-read.table("simul_sampled_children_pheno_ca_mel.txt",header=TRUE,sep="\t")
+ph[1:3,]
+names(ph)[1]<-"IID"
+names(child_eigenvec)[1]<-"IID"
+child_ev_ph<-merge(child_eigenvec[,1:4],ph)
+table(child_ev_ph[,5],useNA="always")
+
+#Plot the PCA results colouring by ethnicity
+plot(child_ev_ph[,3],child_ev_ph[,4])
+points(child_ev_ph[child_ev_ph[,5]=="White - British",3],child_ev_ph[child_ev_ph[,5]=="White - British",4],col="green3")
+points(child_ev_ph[child_ev_ph[,5]=="Asian - Pakistani",3],child_ev_ph[child_ev_ph[,5]=="Asian - Pakistani",4],col="magenta")
+
+
+#We can run logistic regression on the whole dataset
+plink --bfile simul_sampled_children_mexico --allow-no-sex --logistic
+
+p_all<-read.table("plink.assoc.logistic",header=TRUE)
+p_all[!is.na(p_all[,9])&p_all[,9]<0.000001,]
+
+#We can run logistic regression on the whole dataset
+plink --bfile simul_sampled_children_mexico --keep weuro_children.txt --allow-no-sex --logistic
+
+p_euro<-read.table("plink.assoc.logistic",header=TRUE)
+p_euro[!is.na(p_euro[,9])&p_euro[,9]<0.000001,]
+
+
+#We can run logistic regression on the whole dataset
+names(child_ev_ph)[1:4]<-c("FID","IID","PC1","PC2")
+write.table(child_ev_ph[,1:4],file="covar.txt",col.names=TRUE,row.names=FALSE,quote=FALSE)
+
+plink --bfile simul_sampled_children_mexico --keep weuro_children.txt --allow-no-sex --logistic --covar covar.txt
+
+p_euro_cov<-read.table("plink.assoc.logistic",header=TRUE)
+p_euro_cov[!is.na(p_euro_cov[,9])&p_euro_cov[,9]<0.000001,]
+
+

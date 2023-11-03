@@ -1,0 +1,26 @@
+PLINK v1.90b7.1 64-bit (18 Oct 2023)
+Options in effect:
+  --bfile simul_sampled_children_mexico
+  --missing
+  --out testplink
+
+Hostname: cursobio
+Working directory: /home/ecoss/practical_2/student_data
+Start time: Tue Oct 31 15:59:41 2023
+
+Random number seed: 1698789581
+257044 MB RAM detected; reserving 128522 MB for main workspace.
+84196 variants loaded from .bim file.
+969 people (0 males, 0 females, 969 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to testplink.nosex .
+969 phenotype values loaded from .fam.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 969 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.998828.
+--missing: Sample missing data report written to testplink.imiss, and
+variant-based missing data report written to testplink.lmiss.
+
+End time: Tue Oct 31 15:59:41 2023

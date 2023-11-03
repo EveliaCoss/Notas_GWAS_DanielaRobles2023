@@ -1,0 +1,31 @@
+To discuss:
+
+1)	Download PLINK
+a.  PLINK manual https://www.cog-genomics.org/plink/1.9
+
+2)	File structure for plink (mexico.ped, mexico.map)
+
+3)	Read data into PLINK
+a.	plink --file mexico
+
+4)	Look at some summary information
+a.	plink --file mexico --freq    
+This produces a file plink.frq which contains estimates of SNP frequencies
+b.  plink --file mexico --missing   
+This produces two files plink.lmiss (locus information) and plink.imiss (per person) which details missing information
+
+5)  Produce binary files
+a. plink --file mexico --make-bed --out bmexico    
+This produces 3 files ending .bed contains genotyping information (like .ped), .bim (like .map file)
+.fam)    
+
+6) Logistic analysis
+plink --bfile bmexico --logistic
+This produces a file plink.assoc.logistic showing the association  with case-control status for each SNP
+
+7) Look at LD between markers
+plink --bfile bmexico --r triangle
+This produces plink.ld showing association between SNPs
+
+
+

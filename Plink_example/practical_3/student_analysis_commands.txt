@@ -1,0 +1,127 @@
+
+#Read in the stroke GWAS results
+
+gwas<-read.table(file="strokegwasresults.txt",header=T)
+
+#Convert ORs to betas (log odds ratios):
+
+gwas[,10]<-log(gwas[,7])
+
+#Output files for calculating PRS
+
+write.table(gwas[gwas[,9]<10^(-3),c(2,4,10)],file="prs3.txt",row.names=F,col.names=F,quote=F,sep="\t")
+write.table(gwas[gwas[,9]<10^(-4),c(2,4,10)],file="prs4.txt",row.names=F,col.names=F,quote=F,sep="\t")
+write.table(gwas[gwas[,9]<10^(-5),c(2,4,10)],file="prs5.txt",row.names=F,col.names=F,quote=F,sep="\t")
+write.table(gwas[gwas[,9]<10^(-6),c(2,4,10)],file="prs6.txt",row.names=F,col.names=F,quote=F,sep="\t")
+write.table(gwas[gwas[,9]<10^(-7),c(2,4,10)],file="prs7.txt",row.names=F,col.names=F,quote=F,sep="\t")
+write.table(gwas[gwas[,9]<10^(-8),c(2,4,10)],file="prs8.txt",row.names=F,col.names=F,quote=F,sep="\t")
+
+#Now go to the command line and calculate the PRS in the sample at different significance thresholds
+
+cd output
+
+plink --bfile covid1_22 --score prs3.txt --out score3
+plink --bfile covid1_22 --score prs4.txt --out score4
+plink --bfile covid1_22 --score prs5.txt --out score5
+plink --bfile covid1_22 --score prs6.txt --out score6
+plink --bfile covid1_22 --score prs7.txt --out score7
+plink --bfile covid1_22 --score prs8.txt --out score8
+
+#Regress case-control COVID status on each PRS in turn
+
+score3<-read.table(file="score3.profile",header=T)
+resall<-glm((score3[,3]-1)~score3[,6],family=binomial)
+summary(resall)$coeff[2,4]
+[1] 0.05172703
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] 0.0004622399
+
+score4<-read.table(file="score4.profile",header=T)
+resall<-glm((score4[,3]-1)~score4[,6],family=binomial)
+summary(resall)$coeff[2,4]
+[1] 0.0002440162
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] 0.001634525
+
+score5<-read.table(file="score5.profile",header=T)
+resall<-glm((score5[,3]-1)~score5[,6],family=binomial)
+summary(resall)$coeff[2,4]
+[1] 0.02730773
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] 0.0005851046
+
+score6<-read.table(file="score6.profile",header=T)
+resall<-glm((score6[,3]-1)~score6[,6],family=binomial)
+summary(resall)$coeff[2,4]
+[1] 0.5892127
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] 3.51589e-05
+
+score7<-read.table(file="score7.profile",header=T)
+resall<-glm((score7[,3]-1)~score7[,6],family=binomial)
+summary(resall)$coeff[2,4]
+[1] 0.3838002
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] 8.764407e-05
+
+score8<-read.table(file="score8.profile",header=T)
+resall<-glm((score8[,3]-1)~score8[,6],family=binomial)
+summary(resall)$coeff[2,4]
+#Error in summary(resall)$coeff[2, 4] : subscript out of bounds
+1-(summary(resall)$deviance)/summary(resall)$null.deviance
+[1] -2.220446e-16
+
+
+#Strange results for a cut-off of p<10^-8 because the only SBP there is non-polymorphic
+
+#Include sex in this
+
+
+#Now check what happens when you add sex!
+
+famm<-read.table(file="covid1_22.fam",header=F)
+names(famm)[c(1,5)]<-c("FID","SEX")
+score3sex<-merge(score3,famm[,c(1,5)])
+score4sex<-merge(score4,famm[,c(1,5)])
+score5sex<-merge(score5,famm[,c(1,5)])
+score6sex<-merge(score6,famm[,c(1,5)])
+score7sex<-merge(score7,famm[,c(1,5)])
+
+resall<-glm((score3sex[,3]-1)~score3sex[,7]+score3sex[,6],family=binomial)
+summary(resall)
+resall<-glm((score4sex[,3]-1)~score4sex[,7]+score4sex[,6],family=binomial)
+summary(resall)
+resall<-glm((score5sex[,3]-1)~score5sex[,7]+score5sex[,6],family=binomial)
+summary(resall)
+resall<-glm((score6sex[,3]-1)~score6sex[,7]+score6sex[,6],family=binomial)
+summary(resall)
+resall<-glm((score7sex[,3]-1)~score7sex[,7]+score7sex[,6],family=binomial)
+summary(resall)
+
+#Sex is never significant, the PRS are similar to before
+
+
+#melanoma1_22.fam is for the same people but different case/control status
+
+
+famm2<-read.table(file="melanoma1_22.fam",header=F)
+names(famm2)[c(1,5,6)]<-c("FID","SEX","MEL")
+score3sex2<-merge(score3,famm2[,c(1,5,6)])
+score4sex2<-merge(score4,famm2[,c(1,5,6)])
+score5sex2<-merge(score5,famm2[,c(1,5,6)])
+score6sex2<-merge(score6,famm2[,c(1,5,6)])
+score7sex2<-merge(score7,famm2[,c(1,5,6)])
+
+resall<-glm((score3sex2[,8]-1)~score3sex2[,7]+score3sex2[,6],family=binomial)
+summary(resall)
+resall<-glm((score4sex2[,8]-1)~score4sex2[,7]+score4sex2[,6],family=binomial)
+summary(resall)
+resall<-glm((score5sex2[,8]-1)~score5sex[,7]+score5sex[,6],family=binomial)
+summary(resall)
+resall<-glm((score6sex2[,8]-1)~score6sex2[,7]+score6sex2[,6],family=binomial)
+summary(resall)
+resall<-glm((score7sex2[,8]-1)~score7sex2[,7]+score7sex[,6],family=binomial)
+summary(resall)
+
+#Nothing significant!
+

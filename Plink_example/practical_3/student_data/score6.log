@@ -1,0 +1,25 @@
+PLINK v1.90b7.1 64-bit (18 Oct 2023)
+Options in effect:
+  --bfile covid1_22
+  --out score6
+  --score PRS_p6.txt
+
+Hostname: cursobio
+Working directory: /home/ecoss/practical_3/student_data
+Start time: Wed Nov  1 14:43:41 2023
+
+Random number seed: 1698871421
+257044 MB RAM detected; reserving 128522 MB for main workspace.
+3741 variants loaded from .bim file.
+7274 people (3654 males, 3620 females) loaded from .fam.
+7274 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 7274 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.991401.
+3741 variants and 7274 people pass filters and QC.
+Among remaining phenotypes, 1819 are cases and 5455 are controls.
+--score: 44 valid predictors loaded.
+--score: Results written to score6.profile .
+
+End time: Wed Nov  1 14:43:41 2023

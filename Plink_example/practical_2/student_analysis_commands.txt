@@ -1,0 +1,65 @@
+
+#Try running some QC (missingness here):
+
+plink --bfile simul_sampled_children_mexico --missing --out testplink
+
+imiss<-read.table(file="testplink.imiss",header=TRUE)
+hist(imiss[,6])
+dim(imiss[imiss[,6]>0.03,])
+[1] 4 6
+
+
+lmiss<-read.table(file="testplink.lmiss",header=TRUE)
+hist(lmiss[,5])
+dim(lmiss[lmiss[,5]>0.03,])
+[1] 8 5
+
+#Heterozygosity
+
+plink --bfile simul_sampled_children_mexico --het --out testplink
+
+het<-read.table(file="testplink.het",header=TRUE)
+
+ph<-read.table(file="simul_sampled_children_pheno_ca_mel.txt",header=TRUE,sep="\t")
+names(ph)[1]<-"IID"
+
+hetph<-merge(het,ph)
+
+#Run PCA:
+
+plink --bfile simul_sampled_children_mexico --pca --out testplink
+
+pca<-read.table(file="testplink.eigenvec",header=FALSE)
+
+names(pca)[c(1,3,4)]<-c("IID","PC1","PC2")
+pcaph<-merge(pca[,c(1,3,4)],ph)
+
+plot(pcaph[,2],pcaph[,3])
+points(pcaph[pcaph[,4]=="Asian - Pakistani",2],pcaph[pcaph[,4]=="Asian - Pakistani",3],col="red")
+points(pcaph[pcaph[,4]=="White - British",2],pcaph[pcaph[,4]=="White - British",3],col="green")
+
+#Run association with melanoma on all samples:
+
+plink --bfile simul_sampled_children_mexico --logistic --allow-no-sex --out testplinkall
+
+reslog<-read.table(file="testplinkall.assoc.logistic",header=TRUE)
+
+dim(reslog[!is.na(reslog[,9])&reslog[,9]<0.000001,])
+[1] 1941    9
+
+
+#Run association with melanoma on just white British samples:
+
+plink --bfile simul_sampled_children_mexico --keep weuro_children.txt --logistic --allow-no-sex --out testplinkall2
+
+reslog2<-read.table(file="testplinkall2.assoc.logistic",header=TRUE)
+
+reslog2[!is.na(reslog2[,9])&reslog2[,9]<0.000001,]
+CHR           SNP       BP A1 TEST NMISS      OR   STAT         P
+43014   9 GSA-rs7866787 21760639  A  ADD   422  0.1157 -9.782 1.351e-22
+43016   9 GSA-rs4478653 21853221  G  ADD   421  2.9220  6.479 9.225e-11
+69901  16      rs258322 89755903  A  ADD   422 35.9200  8.121 4.634e-16
+
+
+
+

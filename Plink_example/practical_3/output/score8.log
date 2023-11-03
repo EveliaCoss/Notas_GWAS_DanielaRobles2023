@@ -1,0 +1,26 @@
+PLINK v1.90b3.26 64-bit (26 Nov 2015)
+Options in effect:
+  --bfile /Users/medimm/Desktop/mexico/2023/practical_day_3/covid1_22
+  --out /Users/medimm/Desktop/mexico/2023/practical_day_3/output/score8
+  --score /Users/medimm/Desktop/mexico/2023/practical_day_3/output/prs8.txt
+
+Hostname: UOL-L-PH74C4YD4M
+Working directory: /Users/medimm/Desktop/mexico/2023/practical_day_3/output
+Start time: Wed Oct 25 15:44:51 2023
+
+Random number seed: 1698245091
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+3741 variants loaded from .bim file.
+7274 people (3654 males, 3620 females) loaded from .fam.
+7274 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked.
+Before main variant filters, 7274 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.991401.
+3741 variants and 7274 people pass filters and QC.
+Among remaining phenotypes, 1819 are cases and 5455 are controls.
+--score: 1 valid predictor loaded.
+--score: Results written to
+/Users/medimm/Desktop/mexico/2023/practical_day_3/output/score8.profile .
+
+End time: Wed Oct 25 15:44:51 2023

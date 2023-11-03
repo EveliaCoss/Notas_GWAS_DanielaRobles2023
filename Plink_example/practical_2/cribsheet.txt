@@ -1,0 +1,135 @@
+
+#Crib sheet for Precision Medicine workshop
+
+
+
+#Run the PCA from the M: drive:
+
+
+plink --bfile simul_sampled_children_for_msc --pca --out testplink
+
+
+
+#Read the phenotype data into R
+
+ph<-read.table("simul_sampled_children_pheno_ca_mel.txt",header=TRUE,sep="\t")
+
+ph[1:3,]
+names(ph)[1]<-"IID"
+
+
+
+#Read the PCA results into R
+
+child_eigenvec<-read.table(file="testplink.eigenvec",header=FALSE)
+names(child_eigenvec)[1]<-"IID"
+plot(child_eigenvec[,3],child_eigenvec[,4])
+
+#To understand what these mean use phenotype data
+
+child_ev_ph<-merge(child_eigenvec[,1:4],ph)
+
+table(child_ev_ph[,5],useNA="always")
+
+#Plot the PCA results colouring by ethnicity
+plot(child_ev_ph[,3],child_ev_ph[,4])
+points(child_ev_ph[child_ev_ph[,5]=="White - British",3],child_ev_ph[child_ev_ph[,5]=="White - British",4],col="green3")
+
+points(child_ev_ph[child_ev_ph[,5]=="Asian - Pakistani",3],child_ev_ph[child_ev_ph[,5]=="Asian - Pakistani",4],col="magenta")
+
+points(child_ev_ph[child_ev_ph[,5]=="Asian - Indian",3],child_ev_ph[child_ev_ph[,5]=="Asian - Indian",4],col="skyblue")
+
+points(child_ev_ph[child_ev_ph[,5]=="White - Other",3],child_ev_ph[child_ev_ph[,5]=="White - Other",4],col="steelblue")
+
+points(child_ev_ph[child_ev_ph[,5]=="Asian - Bangladeshi",3],child_ev_ph[child_ev_ph[,5]=="Asian - Bangladeshi",4],col="red")
+
+points(child_ev_ph[child_ev_ph[,5]=="Black - African",3],child_ev_ph[child_ev_ph[,5]=="Black - African",4],col="purple")
+
+points(child_ev_ph[child_ev_ph[,5]=="Other",3],child_ev_ph[child_ev_ph[,5]=="Other",4],col="orange")
+
+
+
+#Can repeat zooming in:
+plot(child_ev_ph[,3],child_ev_ph[,4],xlim=c(-0.05,0.04),ylim=c(-0.05,0.03))
+
+points(child_ev_ph[child_ev_ph[,5]=="White - British",3],child_ev_ph[child_ev_ph[,5]=="White - British",4],col="green3")
+
+#etc.
+
+
+#********************
+
+
+
+#Rerun the PCA just for South Asians:
+plink --bfile simul_sampled_children_for_msc --keep sasian_children.txt --pca --out plinksasian
+
+
+
+#Read the PCA results into R
+
+child_eigenvec_sa<-read.table(file="plinksasian.eigenvec",header=FALSE)
+names(child_eigenvec_sa)[1]<-"IID"
+plot(child_eigenvec_sa[,3],child_eigenvec_sa[,4])
+
+#To understand what these mean use phenotype data
+
+child_ev_sa_ph<-merge(child_eigenvec_sa[,1:4],ph)
+table(child_ev_sa_ph[,6],useNA="always")
+
+#Plot the PCA results colouring by ethnicity
+plot(child_ev_sa_ph[,3],child_ev_sa_ph[,4])
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Jatt",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Jatt",4],col="green3")
+
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Pathan",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Pathan",4],col="magenta")
+
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Rajput",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Rajput",4],col="skyblue")
+
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Choudhry",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Choudhry",4],col="steelblue")
+
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Bains",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Bains",4],col="red")
+
+points(child_ev_sa_ph[child_ev_sa_ph[,6]=="Mughal",3],child_ev_sa_ph[child_ev_sa_ph[,6]=="Mughal",4],col="purple")
+
+
+
+#********************
+
+
+
+#Estimate IBC:
+
+
+
+plink --bfile simul_sampled_children_for_msc --keep sasian_children.txt --ibc --out plinksasian
+
+
+sasianchild_ibc<-read.table(file="plinksasian.ibc",header=TRUE)
+
+
+hist(sasianchild_ibc[,6],breaks=25)
+
+
+
+sasianchild_ibc_ph<-merge(sasianchild_ibc,ph)
+
+
+mean(sasianchild_ibc_ph[,9])
+
+
+
+#child of uncle-niece or double first cousins Fhat3=0.125 (1/8)
+#child of first cousins Fhat3=0.0625 (1/16)
+#child of second cousins Fhat3=0.0156 (1/64)
+
+
+mean(sasianchild_ibc_ph[sasianchild_ibc_ph[,6]>0.125,9])
+
+mean(sasianchild_ibc_ph[sasianchild_ibc_ph[,6]>0.0625&sasianchild_ibc_ph[,6]<0.125,9])
+
+mean(sasianchild_ibc_ph[sasianchild_ibc_ph[,6]>0.0156&sasianchild_ibc_ph[,6]<0.0625,9])
+
+mean(sasianchild_ibc_ph[sasianchild_ibc_ph[,6]<0.0156,9])
+
+
+
