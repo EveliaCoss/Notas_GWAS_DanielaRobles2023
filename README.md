@@ -7,7 +7,7 @@ Fechas 30 y 31 de oct, 1 y 3 nov 2023
 ### Lunes 30 Oct 2023
 - [Statistical approaches to GWAS - Tim Bishop](https://docs.google.com/presentation/d/1RxjczYx60UsX0dD5D_GxJAFptSLw8Cq-/edit?usp=sharing&ouid=115061201453977266962&rtpof=true&sd=true)
 - [Population Stratification - Mark Illes](https://docs.google.com/presentation/d/1VIllvSFKs22WD652fldFuYRW7IeW5cmb/edit?usp=sharing&ouid=115061201453977266962&rtpof=true&sd=true)
-- [Introduction to PLINK] - Tim Bishop(https://docs.google.com/presentation/d/1EPod-D49axe5EbRJu9YtFoph2UbnkAQh/edit?usp=sharing&ouid=115061201453977266962&rtpof=true&sd=true)
+- [Introduction to PLINK - Tim Bishop](https://docs.google.com/presentation/d/1EPod-D49axe5EbRJu9YtFoph2UbnkAQh/edit?usp=sharing&ouid=115061201453977266962&rtpof=true&sd=true)
 - [Practial 1](https://drive.google.com/file/d/1ZvGoHpIVjNNfuvylLOWNG9TlsKuA9Sfn/view?usp=sharing)
 - [Carpeta Practica 1](https://drive.google.com/drive/folders/1kRAavUSYGjrdLcSl8P4T9n2vf-5uRlHV?usp=sharing)
 
